@@ -1,0 +1,13 @@
+<div class="snippets">
+    {{#each snippets }}
+        <h2>Update Snippet</h2>
+        <form action="/updated/{{id}}" method="post">
+            <label>Title:</label>
+            {{this.title}}
+            <br>
+            <textarea name="newSnippet">{{this.newSnippet}}</textarea>
+            <br>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    {{/each}}
+</div>

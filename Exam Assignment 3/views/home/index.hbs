@@ -1,0 +1,27 @@
+<h1>Real-time issues</h3>
+
+    <div id="issueList">
+        <h3>All issues</h3>
+        <ul id="issue" class="list"></ul>
+        <ul class="list">
+            {{#each issues}}
+            <li class="issue" id="li{{number}}">
+                <div id="ribbon">
+                    <h3>Title: {{title}}</h3>
+                    <br>
+                    <span class="body">Description: {{body}}</span>
+                    <br>
+                    <a href="{{link}}">{{link}}</a>
+                    <p>Comments: {{commentCounter}}</p>
+                    <p>Created at: {{createdAt}}</p>
+                    <p>Updated at: {{updatedAt}}</p>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div id="notificationList">
+        <h3>Notifications</h3>
+        <ul id="messages"></ul>
+    </div>

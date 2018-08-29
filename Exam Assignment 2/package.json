@@ -1,0 +1,30 @@
+{
+  "name": "af222ug-examination-2",
+  "version": "1.0.0",
+  "description": "Exam assignment 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv523/af222ug-examination-2.git"
+  },
+  "author": "Alva Fandrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv523/af222ug-examination-2/issues"
+  },
+  "homepage": "https://github.com/1dv523/af222ug-examination-2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.13.8"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"    
+  }
+}

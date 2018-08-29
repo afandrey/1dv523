@@ -1,0 +1,18 @@
+{{#if snippets }}
+    <div class="row">
+        {{#each snippets }}
+            <div class="show">
+                <h4>{{this.title}}</h4>
+                <pre><code>{{this.snippet}}</code></pre>
+                <form class="delete-button" action="/delete/{{id}}" method="post">
+                <a class="btn btn-primary" href="/update/{{id}}">Update</a>
+                <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+                <span>Created by: {{this.username}}</span>
+                <br>
+                <span>Posted: {{this.posted}}</span>
+                <br>
+            </div>  
+        {{/each}}
+    </div>
+{{/if}}
